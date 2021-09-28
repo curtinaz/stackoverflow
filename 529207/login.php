@@ -30,7 +30,7 @@ if(isset($_POST['email']))
         $u->conectar("stackoverflow", "localhost","root","");
         if($u->msgErro == "")
         {
-            if($u->logar("$email, $senha"))
+            if($u->logar($email, $senha))
             {
                 header("location:AreaPrivada.php");
             }
