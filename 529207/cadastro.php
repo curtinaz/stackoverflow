@@ -36,7 +36,7 @@ if(isset($_POST['nome']))
     //verificar se não está vazio
     if(!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarSenha))
     {
-        $u->conectar("login", "localhost","root","");
+        $u->conectar("stackoverflow", "localhost","root","");
         if($u->msgErro == "")//não teve nenhum erro
         {
             if ($senha == $confirmarSenha)

@@ -27,7 +27,7 @@ if(isset($_POST['email']))
     //verificar se não está vazio
     if(!empty($email) && !empty($senha))
     {
-        $u->conectar("login", "localhost","root","");
+        $u->conectar("stackoverflow", "localhost","root","");
         if($u->msgErro == "")
         {
             if($u->logar("$email, $senha"))
